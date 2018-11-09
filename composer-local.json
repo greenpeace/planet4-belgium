@@ -3,9 +3,22 @@
 	"description": "Greenpeace P4 Belgium",
 	"license": "MIT",
 	"require": {
-		"greenpeace/planet4-child-theme" : "0.2.10"
+		"greenpeace/planet4-child-theme" : "0.*",
+		"greenpeace/planet4-plugin-migrated-urls": "0.0.1"
 	},
 	"scripts": {
-		"site:custom" : []
+		"core:language": "wp language core install nl_BE;",
+		"core:language2": "wp language core install fr_BE;",
+		"install:plugin-wpimport": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wp-all-import-pro_4.5.4.zip",
+		"install:plugin-wpml": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/sitepress-multilingual-cms.4.0.6.zip",
+		"install:plugin-wpml-allimport": "wp plugin install --activate https://raw.githubusercontent.com/greenpeace/planet4-3rdparty-plugins/master/wpml-all-import.2.0.5.zip",
+
+		"site:custom": [
+			"@core:language",
+			"@core:language2",
+			"@install:plugin-wpimport",
+			"@install:plugin-wpml",
+			"@install:plugin-wpml-allimport"
+		]
 	}
 }
