@@ -1,19 +1,19 @@
 {
-	"name": "greenpeace/planet4-belgium",
-	"description": "Greenpeace P4 Belgium",
-	"license": "MIT",
-	"require": {
-		"greenpeace/planet4-child-theme" : "0.*",
-		"plugins/sitepress-multilingual-cms": "*",
-		"plugins/wpml-translation-management": "*",
-		"plugins/wpml-string-translation": "*"
-	},
-	"scripts": {
-		"core:language": "wp language core install nl_BE;",
-		"core:language2": "wp language core install fr_BE;",
-		"site:custom": [
-			"@core:language",
-			"@core:language2"
-		]
-	}
+    "name": "greenpeace/planet4-belgium",
+    "description": "Greenpeace P4 Belgium",
+    "license": "MIT",
+    "require": {
+        "greenpeace/planet4-child-theme" : "0.*",
+        "plugins/sitepress-multilingual-cms": "*",
+        "plugins/wpml-translation-management": "*",
+        "plugins/wpml-string-translation": "*"
+    },
+    "scripts": {
+        "core:language": "wp language core install nl_BE;",
+        "core:language2": "wp language core install fr_BE;",
+        "site:custom": [
+            "@core:language",
+            "@core:language2"
+        ]
+    }
 }
