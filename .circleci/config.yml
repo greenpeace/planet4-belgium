@@ -30,7 +30,6 @@ job_environments:
     GCLOUD_CLUSTER: p4-development
     HELM_NAMESPACE: develop
     HELM_RELEASE: planet4-belgium
-    NEWRELIC_APPNAME: P4 Belgium Development
     WP_DB_NAME: planet4-belgium_wordpress_develop
     WP_STATELESS_BUCKET: planet4-belgium-stateless-develop
   release_build_env: &release_build_env
@@ -43,7 +42,6 @@ job_environments:
     GOOGLE_PROJECT_ID: planet4-production
     HELM_NAMESPACE: belgium
     HELM_RELEASE: planet4-belgium-release
-    NEWRELIC_APPNAME: P4 Belgium Release
     WP_DB_NAME: planet4-belgium_wordpress_release
     WP_STATELESS_BUCKET: planet4-belgium-stateless-release
   production_environment: &production_environment
@@ -54,7 +52,6 @@ job_environments:
     HELM_NAMESPACE: belgium
     HELM_RELEASE: planet4-belgium-master
     MIN_REPLICA_COUNT: 2
-    NEWRELIC_APPNAME: P4 Belgium Production
     WP_DB_NAME: planet4-belgium_wordpress_master
     WP_STATELESS_BUCKET: planet4-belgium-stateless
 
