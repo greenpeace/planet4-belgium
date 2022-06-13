@@ -1,0 +1,7 @@
+
+{
+  "require": {
+    "planet4-master-theme": "dev-master"
+    "greenpeace/planet4-master-theme": "dev-PLANET-6794_fix_language_switcher"
+  }
+}
