@@ -3,7 +3,7 @@
     "description": "Greenpeace P4 Belgium",
     "license": "MIT",
     "require": {
-        "greenpeace/planet4-child-theme-belgium" : "dev-PLANET-6794_fix_language_switcher",
+        "greenpeace/planet4-child-theme-belgium" : "dev-main",
         "plugins/sitepress-multilingual-cms": "*",
         "plugins/wpml-translation-management": "*",
         "plugins/wpml-string-translation": "*",
