@@ -1,6 +1,6 @@
 
 {
   "require": {
-    "greenpeace/planet4-master-theme": "dev-PLANET-6794_fix_language_switcher"
+    "greenpeace/planet4-master-theme": "dev-fix/pattern-report-timeout-6527"
   }
 }
