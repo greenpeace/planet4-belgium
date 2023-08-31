@@ -1,6 +1,0 @@
-{
-  "scripts": {
-    "install-wpmlelastic": "wp plugin install https://storage.googleapis.com/planet4-3rdparty-plugins/wpml-elasticpress.2.0.1.zip",
-   "site:custom": ["@install-wpmlelastic"]
-  }
-}
